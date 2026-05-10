@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Ahmed's Bistro</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="theme-toggle">🌙 Dark</button>
+                <button id="logout-btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="text-center reveal">Our Menu</h1>
+        
+        <div class="filter-container reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pizza">Pizza</button>
+            <button class="filter-btn" data-filter="burger">Burgers</button>
+            <button class="filter-btn" data-filter="dessert">Desserts</button>
+            <button class="filter-btn" data-filter="drinks">Drinks</button>
+        </div>
+        <div class="menu-grid reveal">
+            <div class="menu-card" data-category="pizza">
+     <img src="images/margherita.jpeg" alt="Pizza">
+                <div class="menu-card-content">
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic tomato sauce, mozzarella, and fresh basil.</p>
+                    <p class="price">$12.99</p>
+                </div>
+            </div>
+            
+            <div class="menu-card" data-category="burger">
+                <img src="images/burger.jpeg" alt="Burger">
+
+                <div class="menu-card-content">
+                    <h3>Bistro Beef Burger</h3>
+                    <p>Angus beef patty, cheddar, lettuce, and secret sauce.</p>
+                    <p class="price">$14.50</p>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="dessert">
+                <img src="images/lava-cake.jpeg" alt="Dessert">
+                <div class="menu-card-content">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Warm chocolate cake with a molten center.</p>
+                    <p class="price">$8.00</p>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="drinks">
+              <img src="images/mocktail.jpeg" alt="Drink">
+                <div class="menu-card-content">
+                    <h3>Tropical Mocktail</h3>
+                    <p>Mango, pineapple, and sparkling water.</p>
+                    <p class="price">$5.50</p>
+                </div>
+            </div>
+            
+            <div class="menu-card" data-category="pizza">
+                <img src="images/pepperoni.jpeg" alt="Pizza">
+                <div class="menu-card-content">
+                    <h3>Pepperoni Blast</h3>
+                    <p>Loaded with pepperoni and extra mozzarella.</p>
+                    <p class="price">$15.00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ahmed's Bistro. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
