@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Restaurant</title>
+    <title>Login - Ahmed's Bistro</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="#" class="logo">Ahmed's Bistro</a>
+            <a href="index.html" class="logo">Ahmed's Bistro</a>
             <div class="nav-buttons">
                 <button id="theme-toggle">🌙 Dark</button>
             </div>
@@ -18,19 +18,22 @@
 
     <main>
         <div class="form-container reveal active">
-            <h2 class="text-center">Staff / User Login</h2>
+            <h2 class="text-center">Welcome Back</h2>
             <form id="login-form">
                 <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter any username">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" placeholder="Enter username or email" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter any password">
+                    <input type="password" id="password" placeholder="Enter your password" required>
                 </div>
                 <p id="login-error" class="error-msg"></p>
                 <button type="submit" style="width: 100%;">Login</button>
             </form>
+            <p style="margin-top: 1rem; text-align: center; font-size: 0.9rem;">
+                Don't have an account? <a href="signup.html" style="color: var(--primary-color);">Sign up now</a>
+            </p>
         </div>
     </main>
 
