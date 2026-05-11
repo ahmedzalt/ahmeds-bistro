@@ -3,40 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Restaurant</title>
+    <title>Ahmed's Bistro - About</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html" class="logo">Ahmed's Bistro</a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html" class="active">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-buttons">
-    <button id="theme-toggle">🌙 Dark</button>
-    <button id="auth-btn">Login</button>
-</div>
+                <button id="auth-btn">Login</button>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="reveal">
-            <h1 class="text-center">Our Story</h1>
-            <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: center;">
-                <img src="images/chef.jpeg" alt="Chef Cooking" style="border-radius: 10px; max-width: 100%; width: 400px; box-shadow: var(--shadow);">
-                <div style="flex: 1; min-width: 300px;">
-                    <h2>Passionate About Food</h2>
-                    <p style="margin-top: 1rem; line-height: 1.6;">Founded with a love for culinary arts, our restaurant focuses on fusing local ingredients with world-class recipes. We believe that coding a great dish is much like developing software—it requires the right architecture, clean ingredients, and perfect execution.</p>
-                </div>
+        <section class="about-section container">
+            <h2 class="text-center">Our Story</h2>
+            <div class="about-content text-center" style="max-width: 800px; margin: 0 auto;">
+                <p style="margin-bottom: 20px;">Ahmed's Bistro was founded with a passion for great food and excellent service. We believe that a meal is more than just food; it's an experience to be shared with friends and family.</p>
+                <p>Our chefs use only the freshest ingredients, sourced locally whenever possible, to create dishes that are both classic and innovative. Whether you are craving a hearty burger or a fresh slice of pizza, we have something to satisfy every taste.</p>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer style="margin-top: auto;">
         <p>&copy; 2026 Ahmed's Bistro. All rights reserved.</p>
     </footer>
 

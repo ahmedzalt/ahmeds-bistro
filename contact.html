@@ -3,47 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Restaurant</title>
+    <title>Ahmed's Bistro - Contact</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html" class="logo">Ahmed's Bistro</a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
-           <div class="nav-buttons">
-    <button id="theme-toggle">🌙 Dark</button>
-    <button id="auth-btn">Login</button>
-</div>
+            <div class="nav-buttons">
+                <button id="auth-btn">Login</button>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h1 class="text-center reveal">Get In Touch</h1>
-        <div class="form-container reveal">
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="contact-name">Name</label>
-                    <input type="text" id="contact-name" placeholder="John Doe">
-                </div>
-                <div class="form-group">
-                    <label for="contact-email">Email Address</label>
-                    <input type="email" id="contact-email" placeholder="john@example.com">
-                </div>
-                <div class="form-group">
-                    <label for="contact-msg">Message</label>
-                    <textarea id="contact-msg" rows="5" placeholder="How can we help you?"></textarea>
-                </div>
-                <p id="contact-error" class="error-msg"></p>
-                <p id="contact-success" class="success-msg"></p>
-                <button type="submit" style="width: 100%; margin-top: 1rem;">Send Message</button>
-            </form>
-        </div>
+        <section class="contact-section container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Full Name</label>
+                        <input type="text" id="contact-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" id="contact-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-msg">Message</label>
+                        <textarea id="contact-msg" rows="5" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>

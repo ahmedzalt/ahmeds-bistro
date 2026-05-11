@@ -10,29 +10,32 @@
     <header>
         <nav>
             <a href="index.html" class="logo">Ahmed's Bistro</a>
-            <div class="nav-buttons">
-                <button id="theme-toggle">🌙 Dark</button>
-            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <div class="form-container reveal active">
-            <h2 class="text-center">Welcome Back</h2>
+        <div class="form-container">
+            <h2 class="text-center">Admin Login</h2>
             <form id="login-form">
                 <div class="form-group">
-                    <label for="username">Username or Email</label>
-                    <input type="text" id="username" placeholder="Enter username or email" required>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter username" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" placeholder="Enter your password" required>
                 </div>
-                <p id="login-error" class="error-msg"></p>
+                <p id="login-error" class="error-msg" style="display: none; color: red;"></p>
                 <button type="submit" style="width: 100%;">Login</button>
             </form>
             <p style="margin-top: 1rem; text-align: center; font-size: 0.9rem;">
-                Don't have an account? <a href="signup.html" style="color: var(--primary-color);">Sign up now</a>
+                *For university demo: Use <strong>admin</strong> and <strong>1234</strong>
             </p>
         </div>
     </main>
